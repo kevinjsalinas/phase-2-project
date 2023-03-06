@@ -1,8 +1,7 @@
-
 import React from "react";
 
 
-function AddNewItemForm () {
+function AddNewCityForm () {
 
 
 
@@ -12,4 +11,4 @@ function AddNewItemForm () {
     )
 }
 
-export default AddNewItemForm ;
+export default AddNewCityForm ;
