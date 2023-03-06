@@ -2,30 +2,30 @@
   "cities": [
     {
       "id": 1,
-      "name": "",
-      "image": "",
-      "attractions": "",
-      "population": "",
-      "description": "",
-      "rating": ""
+      "name": "New York City, NY",
+      "image": "https://www.traveldrafts.com/wp-content/uploads/2022/01/Broadway-New-York-famous-New-York-things.jpg",
+      "attractions": "Central Park, Statue of Liberty, Empire State Building",
+      "population": "8.468 million",
+      "description": "New York is known for its towering skyscrapers, famous districts, and endless energy. From baseball and pizzas to Times Square and yellow cabs, there's a lot to explore in the Big Apple. Amongst the metropolitan boroughs, New York is also famous for its nature including Thousand Island and Finger Lake regions.",
+      "likes": 0
     },
     {
       "id": 2,
-      "name": "",
-      "image": "",
-      "attractions": "",
-      "population": "",
-      "description": "",
-      "rating": ""
+      "name": "Los Angeles, CA",
+      "image": "https://cdn2.hometogo.net/assets/media/pics/1920_600/611bd8dc03098.jpg",
+      "attractions": "Hollywood Walk of Fame, Santa Monica 3rd Street Promenade, Runyon Canyon Park",
+      "population": "3.849 million",
+      "description": "Los Angeles, or LA, is one of the most well-known cities in the world. But why is Los Angeles so famous? Hollywood stars, the TV & movie industries, and gorgeous beaches all make LA a famous city and a popular vacation spot.",
+      "likes": 0
     },
     {
       "id": 3,
-      "name": "",
-      "image": "",
-      "attractions": "",
-      "population": "",
-      "description": "",
-      "rating": ""
+      "name": "Atlanta, GA",
+      "image": "https://tourscanner.com/blog/wp-content/uploads/2020/11/fun-things-to-do-in-Atlanta.jpg",
+      "attractions": "Georgia Aquarium, World of Coca-Cola, Fox Theatre", 
+      "population": "496,461",
+      "description": "Atlanta is known for its high-traffic airport, thriving hip-hop scene, and prominent role in Civil Rights history. The city is home to well-known brands like Coca-Cola, Delta, and CNN.",
+      "rating": 0
     }
   ] 
 }
