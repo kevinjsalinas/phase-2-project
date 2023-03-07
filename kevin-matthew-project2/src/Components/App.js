@@ -1,7 +1,6 @@
 import '../App.css';
-import CityContainer from "./CityContainer";
-import Home from "./Home";
-import React from "react";
+import CityList from "./CityList"
+import React, { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import AddNewCityForm from './AddNewCityForm';
 import { Switch, Route } from "react-router";
@@ -9,6 +8,14 @@ import { Switch, Route } from "react-router";
 function App() {
   
 
+  const[ cities, setCities ] = useState( [] )
+    
+
+    useEffect( () => {
+        fetch( 'http://localhost:3000/cities' )
+        .then( r => r.json() )
+        .then( setCities )
+    }, [])
   //home = route3: www.url.com/ = exact path "/" */ 
   //NavBar = Header from examples 
   return (
@@ -16,7 +23,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path="/cities">
-          <CityContainer />               
+          <CityList cities={ cities }/>               
         </Route>
         <Route path="/cities/new">
           <AddNewCityForm />
