@@ -16,8 +16,12 @@ function App() {
         .then( r => r.json() )
         .then( setCities )
     }, [])
-  //home = route3: www.url.com/ = exact path "/" */ 
-  //NavBar = Header from examples 
+
+    // adding form to state
+    const AddNewCityToState = newCity => {
+      setCities([...cities, newCity])
+    }
+
   return (
     <div className="App">
       <NavBar />
@@ -26,7 +30,7 @@ function App() {
           <CityList cities={ cities }/>               
         </Route>
         <Route path="/cities/new">
-          <AddNewCityForm />
+          <AddNewCityForm AddNewCityToState = {AddNewCityToState} />
         </Route>
       </Switch>
     </div>
