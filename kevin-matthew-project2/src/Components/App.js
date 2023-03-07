@@ -5,35 +5,49 @@ import NavBar from "./NavBar";
 import AddNewCityForm from './AddNewCityForm';
 import CityInfo from './CityInfo';
 import { Switch, Route } from "react-router";
+import Search from './Search';
 
 function App() {
   
 
   const[ cities, setCities ] = useState( [] )
+
+  useEffect( () => {
+      fetch( 'http://localhost:3000/cities' )
+      .then( r => r.json() )
+      .then( setCities )
+  }, [])
+
+  // adding form to state
+  const AddNewCityToState = newCity => {
+    setCities([...cities, newCity])
+  }
+    
+  //adding cityfind info
   const[ cityInfo, setCityInfo] = useState( {} )
 
   const addCityInfoIdToState = cityId => {
-    setCityInfo(cities.find( cityObj => cityObj.id === cityId ))
+  setCityInfo(cities.find( cityObj => cityObj.id === cityId ))
   }
 
 
-    useEffect( () => {
-        fetch( 'http://localhost:3000/cities' )
-        .then( r => r.json() )
-        .then( setCities )
-    }, [])
+  //adding search state 
 
-    // adding form to state
-    const AddNewCityToState = newCity => {
-      setCities([...cities, newCity])
-    }
+  const [ searchCity, setSearchCity] = useState("")
+
+  const filterCities = cities.filter(cityObj => {
+    return cityObj.name.toLowerCase().includes(searchCity.toLowerCase())
+  })
+ 
+
 
   return (
     <div className="App">
       <NavBar />
       <Switch>
         <Route exact path="/cities">
-          <CityList cities={ cities } addCityInfoIdToState={ addCityInfoIdToState }/>               
+          <Search setSearchCity={setSearchCity} /> 
+          <CityList cities={ filterCities } addCityInfoIdToState={ addCityInfoIdToState }/>          
         </Route>
         <Route path="/cities/new">
           <AddNewCityForm AddNewCityToState = {AddNewCityToState} />
