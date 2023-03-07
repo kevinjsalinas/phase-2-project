@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 
@@ -9,14 +9,14 @@ function NavBar () {
 
     return (
         <header>
-            <h1>
-                <Link to ="/cities">
-                    <span>Home</span> 
-                </Link>
-            </h1>
             <nav>
+                <div className="home">
+                    <NavLink to ="/cities">
+                        <span>Home</span> 
+                    </NavLink>
+                </div>
                 <div className="navigation">
-                    <NavLink className="design" to="/form">
+                    <NavLink className="design" to="/cities/new">
                         Add Cities
                     </NavLink>
                 </div>
