@@ -3,7 +3,7 @@ import CityContainer from "./CityContainer";
 import Home from "./Home";
 import React from "react";
 import NavBar from "./NavBar";
-// import { Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router";
 
 function App() {
   
@@ -13,18 +13,14 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-
-    {/* <Switch>
-      <Route exact path="/"> */}
-        <Home /> 
-      {/* </Route>
-      <Route path="/Cities"> */}
-        <CityContainer />               
-      {/* </Route>
-
-    </Switch> */}
-
-      
+      <Switch>
+        <Route exact path="/">
+          <Home /> 
+        </Route>
+        <Route path="cities">
+          <CityContainer />               
+        </Route>
+      </Switch>
     </div>
   );
 }

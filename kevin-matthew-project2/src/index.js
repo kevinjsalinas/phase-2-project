@@ -2,13 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './Components/App';
+import { BrowserRouter as Router } from "react-router-dom";
 
 
+//<App /> MUST BE wrapped around <Router> </Router> which was missing now it works : )
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
+    
   </React.StrictMode>
 );
 
