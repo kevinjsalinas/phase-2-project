@@ -18,7 +18,16 @@ function AddNewCityForm ({AddNewCityToState}) {
     const handleNewCitySubmit = e => {
         e.preventDefault()
 
-        AddNewCityToState(cityForm)
+
+        fetch( 'http://localhost:3000/cities', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify( cityForm )
+        })
+        .then( r => r.json() )
+        .then( AddNewCityToState )
+        e.target.reset()
+
     }
 
     

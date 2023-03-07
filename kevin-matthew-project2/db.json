@@ -22,10 +22,10 @@
       "id": 3,
       "name": "Atlanta, GA",
       "image": "https://tourscanner.com/blog/wp-content/uploads/2020/11/fun-things-to-do-in-Atlanta.jpg",
-      "attractions": "Georgia Aquarium, World of Coca-Cola, Fox Theatre", 
+      "attractions": "Georgia Aquarium, World of Coca-Cola, Fox Theatre",
       "population": "496,461",
       "description": "Atlanta is known for its high-traffic airport, thriving hip-hop scene, and prominent role in Civil Rights history. The city is home to well-known brands like Coca-Cola, Delta, and CNN.",
       "likes": 0
     }
-  ] 
+  ]
 }
