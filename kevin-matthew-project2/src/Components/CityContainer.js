@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Search from "./Search";
 import CityList from "./CityList"
 import AddNewCityForm from "./AddNewCityForm";
-// import { Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 
 function CityContainer() {
@@ -20,14 +20,18 @@ function CityContainer() {
 
     return (
         <div className="container">
-            <Search  />
-            <AddNewCityForm />
-            <CityList cities={ cities } />
-        {/* <Switch> */}
-            {/* <Route path="/cities"> */}
-            {/* </Route>
+            <CityList cities={ cities } /> 
+            
+            <Switch>
+                <Search  />
+                <Route path="/cities/new">
+                    <AddNewCityForm />
+                </Route>
 
-        </Switch> */}
+
+            </Switch>
+            
+       
 
         </div>
 

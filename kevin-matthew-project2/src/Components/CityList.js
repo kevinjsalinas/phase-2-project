@@ -6,7 +6,6 @@ function CityList ( { cities } ) {
     const renderCity = cities.map( cityObj => {
         return <CityCard { ...cityObj } key={ cityObj.id } />
     })
-    //map function goes here to produce <Item key={item.id} />
 
     
     return (

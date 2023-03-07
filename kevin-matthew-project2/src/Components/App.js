@@ -14,15 +14,12 @@ function App() {
     <div className="App">
       <NavBar />
       <Switch>
-        <Route exact path="/">
-          <Home /> 
-        </Route>
-        <Route path="cities">
+        <Route exact path="/cities">
           <CityContainer />               
         </Route>
       </Switch>
     </div>
-  );
+  )
 }
 
 export default App;

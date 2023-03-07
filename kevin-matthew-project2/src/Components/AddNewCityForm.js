@@ -7,8 +7,8 @@ function AddNewCityForm () {
 
 
     return (
-        <div></div>
+        <div id="cities">hello from form</div>
     )
 }
 
-export default AddNewCityForm ;
+export default AddNewCityForm;
