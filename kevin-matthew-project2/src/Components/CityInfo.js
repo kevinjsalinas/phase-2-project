@@ -8,7 +8,18 @@ function CityInfo( { cityInfo } ) {
     
     return (  
         <div className='info'>
-           { cityInfo.attractions }
+           <p>
+            { cityInfo.attractions }
+            </p>
+            <p>
+            { cityInfo.population }
+            </p>
+            <p>
+            { cityInfo.description }
+            </p>
+            <p>
+            { cityInfo.likes }
+            </p>
         </div>
     )
 }
