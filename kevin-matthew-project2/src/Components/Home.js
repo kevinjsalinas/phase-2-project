@@ -18,7 +18,7 @@ function Home () {
           </a>  
           <div className="popup__content">
           <div class="container">
-            <h1 contenteditable>Welcome Travelers!!!</h1>
+            <h1 className="h1home"contenteditable>Welcome Travelers!!!</h1>
             <p>Click on any option to start your journey</p>
             
             </div>
