@@ -13,7 +13,7 @@ function CityList ( { cities, addCityInfoIdToState, setSearchCity } ) {
 
     
     return (
-        <div>
+        <div className="ui grid container image">
             { renderCity }
         </div>
     )
