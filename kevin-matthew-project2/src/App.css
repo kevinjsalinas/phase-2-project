@@ -3,8 +3,7 @@
 }
 
 
-
-/* .App-header {
+.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -20,7 +19,7 @@
 } */
 
 
-/* article {
+ article {
   --img-scale: 1.001;
   --title-color: black;
   --link-icon-translate: -20px;
@@ -39,7 +38,6 @@ article a::after {
   inset-block: 0;
   inset-inline: 0;
   cursor: pointer;
-  content: "";
 }
 
 
@@ -114,7 +112,6 @@ body {
   font-family: "Figtree", sans-serif;
   font-size: 1.2rem;
   line-height: 1.6rem;
-  background-image: linear-gradient(45deg, #7c9885, #b5b682);
   min-height: 100vh;
 }
 
@@ -165,10 +162,10 @@ body {
   position: absolute;
   white-space: nowrap; 
   width: 1px;
-} */
+}
 
 
-
+/*/
 /* 
 UP IS OLD CARD
  

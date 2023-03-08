@@ -49,6 +49,7 @@ function App() {
         <Route exact path="/cities">
           <Search setSearchCity={ setSearchCity } /> 
           <CityList 
+          setSearchCity={ setSearchCity }
           cities={ filterCities } 
           addCityInfoIdToState={ addCityInfoIdToState }/>          
         </Route>

@@ -1,13 +1,14 @@
 import React from "react";
 import CityCard from "./CityCard";
 
-function CityList ( { cities, addCityInfoIdToState } ) {
+function CityList ( { cities, addCityInfoIdToState, setSearchCity } ) {
 
     const renderCity = cities.map( cityObj => {
         return <CityCard 
         { ...cityObj } 
         key={ cityObj.id } 
-        addCityInfoIdToState={ addCityInfoIdToState } />
+        addCityInfoIdToState={ addCityInfoIdToState }
+        setSearchCity={ setSearchCity } />
     })
 
     

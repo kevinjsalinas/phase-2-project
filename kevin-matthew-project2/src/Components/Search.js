@@ -7,7 +7,6 @@ function Search ({setSearchCity}) {
 
     const handleSearch = e => {
         setSearchCity(e.target.value)
-        e.target.reset()
     }
 
 
@@ -17,7 +16,7 @@ function Search ({setSearchCity}) {
       <input
         type="text"
         placeholder="Search your favorite city"
-        onChange={handleSearch}
+        onChange={ handleSearch }
       />
       <i className="circular search link icon"></i>
     </div>

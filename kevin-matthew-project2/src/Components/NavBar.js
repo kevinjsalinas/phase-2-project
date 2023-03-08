@@ -4,20 +4,16 @@ import '../navbar.css';
 
 function NavBar () {
 
-//Nav Bar state and handler
-const [showNavbar, setShowNavbar] = useState(false)
-const handleShowNavbar = () => { setShowNavbar(!showNavbar)}
-
 
     return (
         <nav className="navbar">
       <div className="container">
         <div className="logo">
         </div>
-        <div className="menu-icon" onClick={handleShowNavbar}>
+        <div className="menu-icon">
             
         </div>
-        <div className={`nav-elements  ${ showNavbar && 'active' }`}>
+        <div className={`nav-elements`}>
           <ul>
             <li>
               <NavLink to="/">Home</NavLink>
