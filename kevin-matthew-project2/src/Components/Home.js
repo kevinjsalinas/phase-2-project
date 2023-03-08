@@ -17,8 +17,11 @@ function Home () {
             <span className="screen-reader">close</span>
           </a>  
           <div className="popup__content">
-            <h1 className="popup__title r-title">Welcome Travelers!!!</h1>
-            <p>Click on any option to get your journey started</p>
+          <div class="container">
+            <h1 contenteditable>Welcome Travelers!!!</h1>
+            <p>Click on any option to start your journey</p>
+            
+            </div>
           </div>
         </div>
       </div></div>
