@@ -33,6 +33,7 @@ function AddNewCityForm ({AddNewCityToState}) {
     
     return (
         <div className="ui segment">
+            <h2>Can't find your city? Add yours here!</h2>
             <form onSubmit={handleNewCitySubmit} className="ui form">
                 <div><input onChange={handleAddForm} type="text" name="name" placeholder="city name" /></div>
                 <div><input onChange={handleAddForm} type="text" name="image" placeholder="image URL" /></div>
