@@ -4,30 +4,62 @@ import '../navbar.css';
 
 function NavBar () {
 
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  }
 
     return (
-        <nav className="navbar">
-      <div className="container">
-        <div className="logo">
-        </div>
-        <div className="menu-icon">
-            
-        </div>
-        <div className={`nav-elements`}>
-          <ul>
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/cities">Cities</NavLink>
-            </li>
-            <li>
-              <NavLink to="/cities/new">New City</NavLink>
-            </li>
-          </ul>
-        </div>
+      <nav>
+      <div className="logo">
+        <a href="/">TravelWiki</a>
+      </div>
+      <ul className={isOpen ? "nav-links open" : "nav-links"}>
+        <li>
+        <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+        <NavLink to="/cities">Cities</NavLink>
+        </li>
+        <li>
+        <NavLink to="/cities/new">New City</NavLink>
+        </li>
+      </ul>
+      <div className="burger" onClick={toggleNav}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
       </div>
     </nav>
+        /* <li>
+          <a href="/">Blog</a>
+        </li>
+        <li>
+          <a href="/">Contact</a>
+        </li> */
+    //     <nav className="navbar">
+    //   <div className="container">
+    //     <div className="logo">
+    //     </div>
+    //     <div className="menu-icon">
+            
+    //     </div>
+    //     <div className={`nav-elements`}>
+    //       <ul>
+    //         <li>
+    //           <NavLink to="/">Home</NavLink>
+    //         </li>
+    //         <li>
+    //           <NavLink to="/cities">Cities</NavLink>
+    //         </li>
+    //         <li>
+    //           <NavLink to="/cities/new">New City</NavLink>
+    //         </li>
+    //       </ul>
+    //     </div>
+    //   </div>
+    // </nav>
         // <header>
         //     <nav>
         //         <div className="home">
@@ -50,4 +82,4 @@ function NavBar () {
     )
 }
 
-export default NavBar ;
+export default NavBar;

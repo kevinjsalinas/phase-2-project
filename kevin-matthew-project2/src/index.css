@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ui.large.input {
+  font-size: 1.14285714em;
+  bottom: -25px;
+}
+
+.ui.grid {
+  margin-top: -1rem;
+  bottom: -35px;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.ui.segment, .ui.segments .segment {
+  font-size: 1rem;
+  bottom: -18px;
+}
