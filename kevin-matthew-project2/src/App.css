@@ -4,7 +4,7 @@
 
 
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -17,10 +17,10 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
 
 
-article {
+/* article {
   --img-scale: 1.001;
   --title-color: black;
   --link-icon-translate: -20px;
@@ -42,7 +42,7 @@ article a::after {
   content: "";
 }
 
-/* basic article elements styling */
+
 article h2 {
   margin: 0 0 18px 0;
   font-family: "Bebas Neue", cursive;
@@ -91,7 +91,7 @@ article a .icon {
   transition: all 0.3s;
 }
 
-/* using the has() relational pseudo selector to update our custom properties */
+
 article:has(:hover, :focus) {
   --img-scale: 1.1;
   --title-color: #28666e;
@@ -101,9 +101,6 @@ article:has(:hover, :focus) {
 }
 
 
-/************************ 
-Generic layout (demo looks)
-**************************/
 
 *,
 *::before,
@@ -168,4 +165,15 @@ body {
   position: absolute;
   white-space: nowrap; 
   width: 1px;
-}
+} */
+
+
+
+/* 
+UP IS OLD CARD
+ 
+DOWN IS NEW CARD
+*/
+
+
+

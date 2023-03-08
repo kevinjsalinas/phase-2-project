@@ -1,11 +1,12 @@
 import '../App.css';
 import CityList from "./CityList"
 import React, { useState, useEffect } from "react";
+import { Switch, Route } from "react-router";
 import NavBar from "./NavBar";
 import AddNewCityForm from './AddNewCityForm';
 import CityInfo from './CityInfo';
-import { Switch, Route } from "react-router";
 import Search from './Search';
+import Home from './Home';
 
 function App() {
   
@@ -46,14 +47,19 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path="/cities">
-          <Search setSearchCity={setSearchCity} /> 
-          <CityList cities={ filterCities } addCityInfoIdToState={ addCityInfoIdToState }/>          
+          <Search setSearchCity={ setSearchCity } /> 
+          <CityList 
+          cities={ filterCities } 
+          addCityInfoIdToState={ addCityInfoIdToState }/>          
         </Route>
         <Route path="/cities/new">
-          <AddNewCityForm AddNewCityToState = {AddNewCityToState} />
+          <AddNewCityForm AddNewCityToState = { AddNewCityToState } />
         </Route>
         <Route path="/cities/info">
           <CityInfo cityInfo={ cityInfo } />
+        </Route>
+        <Route path="/">
+          <Home />
         </Route>
       </Switch>
     </div>

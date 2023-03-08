@@ -39,7 +39,7 @@ function AddNewCityForm ({AddNewCityToState}) {
                 <div><input onChange={handleAddForm} type="text" name="population" placeholder="city population" /></div>
                 <div><input onChange={handleAddForm} type="text" name="description" placeholder="city description" /></div>
                 <div><input onChange={handleAddForm} type="text" name="attractions" placeholder="city attractions" /></div>
-                <button className="ui button" type="submit">
+                <button className="thisButton" type="submit">
                     Add city
                 </button>
             </form>
