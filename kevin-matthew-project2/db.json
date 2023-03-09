@@ -47,6 +47,30 @@
       "description": "A part from it's awe-inspiring historical attractions, Lima is also renowned as South America's culinary capital, boasting world-class eateries and authentic local gems that offer a heady mix of flavours.",
       "attractions": "Miraflores, Larcomar, Magic Water Circuit",
       "id": 6
+    },
+    {
+      "name": "Barcelona, Spain",
+      "image": "https://stories.forbestravelguide.com/wp-content/uploads/2019/12/HERO-HowToSpendTwoPerfectDaysInBarcelona-Barcelona-CreditMasterLu-iStock.jpg",
+      "population": "1.62 million",
+      "description": "Barcelona is a Mediterranean city with excellent beaches and good weather. Art, gastronomy, and sports excel exceptionally. Gaudi's architecture, 30 Michelin stars restaurants, and the Barcelona Football Club (soccer) have made the city a world-famous travel destination.",
+      "attractions": "Basílica de la Sagrada Família, Barri Gòtic (Gothic Quarter), La Rambla: Barcelona's Social Hub",
+      "id": 7
+    },
+    {
+      "name": "San Francisco, CA, USA",
+      "image": "https://www.extraspace.com/wp-content/uploads/2019/05/things-know-living-san-francisco-ca.jpg",
+      "population": "815,201",
+      "description": "San Francisco is known for its cool summers, fog, steep rolling hills, eclectic mix of architecture, and landmarks, including the Golden Gate Bridge, cable cars, the former Alcatraz Federal Penitentiary, Fisherman's Wharf, and its Chinatown district.",
+      "attractions": "Golden Gate Bridge, Alcatraz Island, Fisherman's Wharf",
+      "id": 8
+    },
+    {
+      "name": "Amsterdam, Netherlands",
+      "image": "https://uconsulting.nl/wp-content/uploads/amsterdam-netherlands.jpg",
+      "population": "1.166 million",
+      "description": "Amsterdam is known for its historical attractions, for its collections of great art, and for the distinctive colour and flavour of its old sections, which have been so well preserved.",
+      "attractions": "Rijksmuseum, Anne Frank House, Van Gogh Museum",
+      "id": 9
     }
   ]
 }
