@@ -28,8 +28,12 @@ function App() {
   const[ cityInfo, setCityInfo] = useState( {} )
 
   const addCityInfoIdToState = cityId => {
-  setCityInfo(cities.find( cityObj => cityObj.id === cityId ))
+    setCityInfo(cities.find( cityObj => cityObj.id === cityId ))
   }
+
+  //adding cityDetails state 
+
+  const [cityDetails, setCityDetails] = useState({})
 
 
   //adding search state 
@@ -57,7 +61,7 @@ function App() {
           <AddNewCityForm AddNewCityToState = { AddNewCityToState } />
         </Route>
         <Route path="/cities/info">
-          <CityInfo cityInfo={ cityInfo } />
+          <CityInfo setCityDetails={setCityDetails} cityDetails={cityDetails} />
         </Route>
         <Route path="/">
           <Home />

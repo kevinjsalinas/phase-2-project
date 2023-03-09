@@ -1,39 +1,51 @@
 import React from "react";
-import { Container, Header} from "semantic-ui-react"
+import { Container} from "semantic-ui-react"
+import { useParams, Route } from "react-router-dom";
+import { useEffect } from "react"
+
+const DisplayCityDetails = ({setCityDetails, cityDetails} ) => {
+    const helloObj = useParams()
+    // console.log(helloObj)   //grabs a param id from the click I do so NY = 1, LA = 2
+
+
+    //fetch again with specific id 
+
+    useEffect( () => {
+        fetch( `http://localhost:3000/cities/${helloObj.id}` )
+        .then( r => r.json() )
+        .then( data => setCityDetails(data) )
+    }, [])
+
+
+    //console.log("hello", cityDetails)  
 
 
 
-function CityInfo( { cityInfo } ) {
-
-    
-    
-    return (  
-        <Container  >
-        <div className='ui centered card image'>
-            <img src={cityInfo.image} />
-            <h1>{cityInfo.name}</h1>
+return ( 
+    <div className='ui centered card image'>
+            <img src={cityDetails.image} />
+            <h1>{cityDetails.name}</h1>
             <br></br>
             <div>
                 <h3>Population:</h3>
                 <p>
-                { cityInfo.population }
+                { cityDetails.population }
                 </p>
             </div>
             <br></br>
             <div>
                 <h3>Description:</h3>
                 <p>
-                { cityInfo.description }
+                { cityDetails.description }
                 </p>
             </div>
             <br></br>
             <div>
                 <h3>Popular attractions:</h3>
                 <p>  
-                { ` ${cityInfo.attractions}` }
-                 </p>
+                { ` ${cityDetails.attractions}` }
+                </p>
             </div>
-            <br></br>
             <br></br>
             {/* <div>
                 <p>
@@ -41,6 +53,18 @@ function CityInfo( { cityInfo } ) {
                 </p>
             </div> */}
         </div>
+    )
+}
+
+
+function CityInfo({setCityDetails, cityDetails} ) {
+
+    
+    return (  
+        <Container  >
+            <Route path="/cities/info/:id">
+                <DisplayCityDetails setCityDetails={setCityDetails} cityDetails={cityDetails}/>
+            </Route>
         </Container>
     )
 }
