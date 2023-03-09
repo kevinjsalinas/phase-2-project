@@ -63,11 +63,11 @@ return (
                 onChange={ onChangeHandler }
                 className="input-box"
                 />
-            {comments.map( text => (
-            <div className="comment-container">{ text }</div>))}
                 <button onClick={ onClickHandler } className="comment-button">
                     Submit
                 </button>
+            {comments.map( text => (
+            <div className="comment-container">{ text }</div>))}
             </div>
         </div>
     </div>

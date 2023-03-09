@@ -16,13 +16,13 @@ function NavBar () {
         <a href="/">TravelWiki</a>
       </div>
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
-        <li>
+        <li className="hover-underline-animation">
         <NavLink to="/">Home</NavLink>
         </li>
-        <li>
+        <li className="hover-underline-animation">
         <NavLink to="/cities">Cities</NavLink>
         </li>
-        <li>
+        <li className="hover-underline-animation">
         <NavLink to="/cities/new">New City</NavLink>
         </li>
       </ul>
