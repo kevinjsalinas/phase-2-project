@@ -1,7 +1,7 @@
 import React from "react";
 import { Container} from "semantic-ui-react"
 import { useParams, Route } from "react-router-dom";
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 const DisplayCityDetails = ({setCityDetails, cityDetails} ) => {
     const helloObj = useParams()
@@ -16,43 +16,61 @@ const DisplayCityDetails = ({setCityDetails, cityDetails} ) => {
         .then( data => setCityDetails(data) )
     }, [])
 
+    //console.log("hello", cityDetails)
 
-    //console.log("hello", cityDetails)  
+    //states for comment
+    const [comment, setComment] = useState( "" );
+    const [comments, setComments] = useState( [] );
+
+    const onClickHandler = () => {
+    setComments( ( comments ) => [ ...comments, comment ] ) }
+    
+    const onChangeHandler = e => { setComment( e.target.value ) }
 
 
 
 return ( 
     <div className='ui centered card image'>
-            <img src={cityDetails.image} />
-            <h1>{cityDetails.name}</h1>
-            <br></br>
-            <div>
-                <h3>Population:</h3>
-                <p>
+        <img src={cityDetails.image} />
+        <h1>{cityDetails.name}</h1>
+        <br></br>
+        <div>
+            <h3>Population:</h3>
+            <p>
                 { cityDetails.population }
-                </p>
-            </div>
-            <br></br>
-            <div>
-                <h3>Description:</h3>
-                <p>
+            </p>
+        </div>
+        <br></br>
+        <div>
+            <h3>Description:</h3>
+            <p>
                 { cityDetails.description }
-                </p>
-            </div>
-            <br></br>
-            <div>
-                <h3>Popular attractions:</h3>
-                <p>  
-                { ` ${cityDetails.attractions}` }
-                </p>
-            </div>
-            <br></br>
-            <div>
-                <p>
-                { cityDetails.stars }
-                </p>
+            </p>
+        </div>
+        <br></br>
+        <div>
+            <h3>Popular attractions:</h3>
+            <p>  
+                { `${ cityDetails.attractions }` }
+            </p>
+        </div>
+        <br></br>
+        <div className="main-container">
+            <div className="comment-flexbox">
+                <h3 className="comment-text">Comment</h3>
+                <textarea
+                value={ comment }
+                onChange={ onChangeHandler }
+                className="input-box"
+                />
+            {comments.map( text => (
+            <div className="comment-container">{ text }</div>))}
+                <button onClick={ onClickHandler } className="comment-button">
+                    Submit
+                </button>
             </div>
         </div>
+    </div>
     )
 }
 

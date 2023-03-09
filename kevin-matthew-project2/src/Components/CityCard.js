@@ -10,6 +10,8 @@ function CityCard ( { name, image, id, addCityInfoIdToState, setSearchCity } ) {
     setSearchCity( '' )
   }
 
+  
+
   return (
     <div onClick={ () => addCityInfoIdToState(id) }className="ui five wide column image" >
       <section className="articles">

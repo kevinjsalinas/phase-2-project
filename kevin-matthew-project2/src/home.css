@@ -81,20 +81,6 @@ overscroll-behavior: contain; /* 1 */
 font-size: 1.5rem;
 }
 
-.popup__close{
-width: 2rem;
-height: 2rem;
-
-position: fixed;
-top: 1.5rem;
-right: 1.5rem;
-
-background-repeat: no-repeat;
-background-position: center center;
-background-size: contain;
-background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
-}
-
 /*
 animation
 */
@@ -243,4 +229,17 @@ p {
   text-align: center;
   color: black;
   letter-spacing: .5px;
+}
+
+li {
+  font-size: 1.2em;
+  line-height: 150%;
+  text-align: center;
+  color: black;
+  letter-spacing: .5px;
+}
+
+li:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
 }
