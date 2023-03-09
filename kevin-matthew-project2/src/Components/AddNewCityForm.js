@@ -32,40 +32,93 @@ function AddNewCityForm ({AddNewCityToState}) {
     }
 
     return (
-        <form onSubmit={ handleNewCitySubmit } className="travel-form">
+    <form onSubmit={ handleNewCitySubmit } className="travel-form">
       <h2>Add your favorite city</h2>
       <div className="form-group">
-      <input onChange={handleAddForm} type="text" name="name" placeholder="city name" required/> 
+        <input 
+        onChange={ handleAddForm } 
+        type="text" 
+        name="name" 
+        placeholder="city name" 
+        required/> 
       </div>
       <div className="form-group">
-      <input onChange={handleAddForm} type="text" name="image" placeholder="image URL" required/>
+        <input 
+        onChange={ handleAddForm } 
+        type="text" 
+        name="image" 
+        placeholder="image URL"
+         required/>
       </div>
       <div className="form-group">
-      <input onChange={handleAddForm} type="text" name="population" placeholder="city population" required/>
+        <input 
+        onChange={ handleAddForm } 
+        type="text" 
+        name="population" 
+        placeholder="city population" 
+        required/>
       </div>
       <div className="form-group">
-      <input onChange={handleAddForm} type="text" name="description" placeholder="city description" required/>
+        <input 
+        onChange={ handleAddForm } 
+        type="text" 
+        name="description" 
+        placeholder="city description" 
+        required/>
       </div>
       <div className="form-group">
-      <input onChange={handleAddForm} type="text" name="attractions" placeholder="city attractions" />
+        <input 
+        onChange={ handleAddForm } 
+        type="text" 
+        name="attractions" 
+        placeholder="city attractions" />
       </div>
         <div className="form-group">
         <div className="rate">
-        <input type="radio" id="star5" name="rate" value="5" />
-        <label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" />
-        <label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" />
-        <label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" />
-        <label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" />
-        <label for="star1" title="text">1 star</label>
+            <input 
+            onChange={ handleAddForm } 
+            type="radio" 
+            id="star5" 
+            name="rate" 
+            value="5" />
+            <label htmlFor="star5" title="text">5 stars</label>
+
+            <input 
+            onChange={ handleAddForm } 
+            type="radio" 
+            id="star4" 
+            name="rate" 
+            value="4" />
+            <label htmlFor="star4" title="text">4 stars</label>
+
+            <input 
+            onChange={ handleAddForm } 
+            type="radio" 
+            id="star3" 
+            name="rate" 
+            value="3" />
+            <label htmlFor="star3" title="text">3 stars</label>
+
+            <input 
+            onChange={ handleAddForm } 
+            type="radio" 
+            id="star2" 
+            name="rate" 
+            value="2" />
+            <label htmlFor="star2" title="text">2 stars</label>
+
+            <input 
+            onChange={ handleAddForm } 
+            type="radio" 
+            id="star1" 
+            name="rate" 
+            value="1" />
+            <label htmlFor="star1" title="text">1 star</label>
         </div>
         </div>
-      <div className="form-group">
-        <button type="submit">Submit</button>
-      </div>
+        <div className="form-group">
+            <button type="submit">Submit</button>
+        </div>
     </form>
     )
 }

@@ -18,7 +18,7 @@ function Search ({setSearchCity}) {
         placeholder="Search your favorite city"
         onChange={ handleSearch }
       />
-      <i className="circular search link icon"></i>
+      {/* <i className="circular search link icon"></i> */}
     </div>
 
     )

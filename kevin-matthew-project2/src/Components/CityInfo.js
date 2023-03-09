@@ -47,11 +47,11 @@ return (
                 </p>
             </div>
             <br></br>
-            {/* <div>
+            <div>
                 <p>
-                { cityInfo.likes }
+                { cityDetails.stars }
                 </p>
-            </div> */}
+            </div>
         </div>
     )
 }
