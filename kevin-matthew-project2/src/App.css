@@ -162,6 +162,37 @@ body {
   width: 1px;
 }
 
+/* semantic CSS  */
+
+.ui.input>input {
+  margin: auto;
+  max-width: 25%;
+  flex: 1 0 auto;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  text-align: left;
+  line-height: 1.21428571em;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  padding: 0.67857143em 1em;
+  background: #fff;
+  border: 1px solid rgba(34,36,38,.15);
+  color: rgba(0,0,0,.87);
+  border-radius: 5.285714rem;
+  transition: box-shadow .1s ease,border-color .1s ease;
+  box-shadow: none;
+}
+
+.ui.icon.input>i.circular.icon {
+  top: 0.35em;
+  right: 30.5em;
+}
+
+.ui.grid {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
 
 /*/
 /* 
