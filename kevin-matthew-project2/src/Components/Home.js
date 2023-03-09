@@ -20,10 +20,10 @@ function Home () {
               <p>This application is here to help you choose what city you want to travel to next!!</p>
             <ul className="list-holder">
               <Link to="/cities">
-              <li className="home-list">View Cities</li>
+              <li className="home-list">View Cities ➡️</li>
               </Link>
               <Link to="/cities/new">
-              <li className="home-list">Add your favorite city</li>
+              <li className="home-list">Add your favorite city ➡️</li>
               </Link>
               <li className="home-list">Leave a comment</li>
             </ul>  
