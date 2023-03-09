@@ -44,11 +44,6 @@ nav ul li a {
   transition: all 0.3s ease;
 }
 
-/* nav ul li a:hover {
-  background-color: #fff;
-  color: #252525;
-} */
-
 .burger {
   display: none;
   cursor: pointer;

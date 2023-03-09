@@ -9,7 +9,6 @@ const DisplayCityDetails = ({setCityDetails, cityDetails} ) => {
 
 
     //fetch again with specific id 
-
     useEffect( () => {
         fetch( `http://localhost:3000/cities/${helloObj.id}` )
         .then( r => r.json() )
@@ -22,9 +21,9 @@ const DisplayCityDetails = ({setCityDetails, cityDetails} ) => {
     const [comment, setComment] = useState( "" );
     const [comments, setComments] = useState( [] );
 
+    //handlers for comment
     const onClickHandler = () => {
-    setComments( ( comments ) => [ ...comments, comment ] ) }
-    
+        setComments( ( comments ) => [ ...comments, comment ] ) }
     const onChangeHandler = e => { setComment( e.target.value ) }
 
 

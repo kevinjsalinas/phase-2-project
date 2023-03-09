@@ -12,7 +12,7 @@ function Search ({setSearchCity}) {
 
 
     return (
-        <div className="ui large fluid icon input">
+    <div className="ui large fluid icon input">
       <input
         type="text"
         placeholder="Search your favorite city"
