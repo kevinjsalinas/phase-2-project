@@ -43,11 +43,12 @@ article a::after {
 
 article h2 {
   margin: 0 0 18px 0;
-  font-family: "Bebas Neue", cursive;
+  /* font-family: "Bebas Neue", cursive; */
   font-size: 1.9rem;
   letter-spacing: 0.06em;
   color: var(--title-color);
   transition: color 0.3s ease-out;
+  font-weight: 700;
 }
 
 figure {
@@ -233,6 +234,7 @@ body {
   border: 1px solid;
   background-color: black;
   cursor: pointer;
+  /* font-family: "Bebas Neue", cursive; */
 }
 
 .comment-button:hover {
@@ -255,3 +257,16 @@ body {
   border: solid black;
 }
 
+h1 {
+  min-height: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5 {
+  
+  line-height: 1.28571429em;
+  margin: calc(2rem - 0.14285714em) 0 1rem;
+  font-weight: 700;
+  padding: 0;
+}
