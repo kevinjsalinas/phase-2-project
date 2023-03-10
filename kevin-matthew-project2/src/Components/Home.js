@@ -15,8 +15,8 @@ function Home () {
         <div className="popup__container">
           <div className="popup__content">
             <div className="container">
-              <h1 className="h1home">Welcome Travelers!</h1>
-              <h2>As a traveler, there's nothing like the excitement of discovering new places and immersing yourself in different cultures.</h2>
+              <h1 className="h1home">Welcome City Fanatics!</h1>
+              <h2>As a city traveler, there's nothing like the excitement of discovering new places and immersing yourself in different cultures.</h2>
               <h2>This application is here to help you choose what city will be your next travel destination.</h2>
               <h2>Use the links below or the navigation bar above to navigate through the site.</h2>
               <h2>Your next adventure awaits ✈️🌎</h2>

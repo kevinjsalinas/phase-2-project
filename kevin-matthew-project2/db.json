@@ -71,6 +71,30 @@
       "description": "Amsterdam is known for its historical attractions, for its collections of great art, and for the distinctive colour and flavour of its old sections, which have been so well preserved.",
       "attractions": "Rijksmuseum, Anne Frank House, Van Gogh Museum",
       "id": 9
+    },
+    {
+      "name": "Cologne, Germany",
+      "image": "https://cdn.britannica.com/78/151778-050-1FC733B4/Night-view-Cologne-Germany-Rhine-River.jpg",
+      "population": "1.137 million",
+      "description": "Cologne is the seat of a university and the see of a Roman Catholic archbishop. Its cathedral, the largest Gothic church in northern Europe, was designated a UNESCO World Heritage site in 1996; it is the city's major landmark and unofficial symbol.",
+      "attractions": "Cologne Cathedral, Museum Ludwig, Chocolate Museum",
+      "id": 10
+    },
+    {
+      "name": "Bangkok, Thailand",
+      "image": "https://www.travelandleisure.com/thmb/zXEFKsY1RGyfGOt3by-B3COjVL4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/header-skyline-bangkok-thailand-24HRBKK0622-4be256e6f49545548234faa7e3167746.jpg",
+      "population": "10.7 million",
+      "description": "It is popular for its magnificent palaces, skyscrapers, museums and markets that attract tourists worldwide. Also, adventure lovers visit this spot to explore its cultural and historical landmarks.",
+      "attractions": "The Grand Palace, Wat Arun, Temple of the Emerald Buddha",
+      "id": 11
+    },
+    {
+      "name": "Toronto, Canada",
+      "image": "https://www.prepareforcanada.com/wp-content/uploads/Torronto-Main.jpg",
+      "population": "6.313 million",
+      "description": "Toronto is known for its many skyscrapers and high-rise buildings, in particular the tallest free-standing structure on land outside of Asia, the CN Tower.",
+      "attractions": "CN Tower, Royal Ontario Museum, Ripley’s Aquarium of Canada",
+      "id": 12
     }
   ]
 }

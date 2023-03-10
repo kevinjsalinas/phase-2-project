@@ -13,7 +13,7 @@ function NavBar () {
     return (
     <nav>
       <div className="logo">
-        <a href="/">TravelWiki</a>
+        <a href="/">CityWiki</a>
       </div>
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li className="hover-underline-animation">
