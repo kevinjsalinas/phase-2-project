@@ -26,7 +26,7 @@ function CityCard ( { name, image, id, addCityInfoIdToState, setSearchCity } ) {
                 to={ `/cities/info/${id}` } 
                 onClick={ resetSearch } 
                 className="read-more">
-                Read more <span className="sr-only">about this is some title</span>
+                Learn more <span className="sr-only"></span>
               <svg 
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon" 

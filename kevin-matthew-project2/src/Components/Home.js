@@ -15,9 +15,11 @@ function Home () {
         <div className="popup__container">
           <div className="popup__content">
             <div className="container">
-              <h1 className="h1home">Welcome Travelers!!!</h1>
-              <p>As a traveler, there's nothing quite like the excitement of discovering new places and immersing yourself in different cultures.</p>
-              <p>This application is here to help you choose what city you want to travel to next!!</p>
+              <h1 className="h1home">Welcome Travelers!</h1>
+              <h2>As a traveler, there's nothing like the excitement of discovering new places and immersing yourself in different cultures.</h2>
+              <h2>This application is here to help you choose what city will be your next travel destination.</h2>
+              <h2>Use the links below or the navigation bar above to navigate through the site.</h2>
+              <h2>Your next adventure awaits ✈️🌎</h2>
             <ul className="list-holder">
               <Link to="/cities">
               <li className="home-list">View Cities ➡️</li>
@@ -25,7 +27,7 @@ function Home () {
               <Link to="/cities/new">
               <li className="home-list">Add your favorite city ➡️</li>
               </Link>
-              <li className="home-list">Leave a comment</li>
+              {/* <li className="home-list">Leave a comment</li> */}
             </ul>  
             </div>
           </div>
